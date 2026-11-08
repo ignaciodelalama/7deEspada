@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <script>document.documentElement.classList.add('js')</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Siete de Espadas · Espeto Corrido · City Bell</title>
+  <meta name="description" content="Siete de Espadas, espeto corrido en City Bell. Siete cortes de carnes seleccionadas llegan a tu mesa, uno por uno, servidos directamente desde cada espada. Mirá nuestra carta y reservá por WhatsApp.">
+  <meta name="theme-color" content="#060504">
+  <meta property="og:title" content="Siete de Espadas · Espeto Corrido · City Bell">
+  <meta property="og:description" content="Siete cortes. Siete espadas. Una experiencia completa en City Bell.">
+  <meta property="og:type" content="restaurant">
+  <!-- FOTO REEMPLAZABLE · IMAGEN DE VISTA PREVIA PARA WHATSAPP Y REDES (OpenGraph) -->
+  <meta property="og:image" content="assets/hero-salon.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23060504'/%3E%3Ccircle cx='32' cy='11' r='4' fill='%23c99b52'/%3E%3Crect x='30.6' y='14' width='2.8' height='14' fill='%23c99b52'/%3E%3Cpath d='M17 33 C17 28 24 26 32 26 C40 26 47 28 47 33' fill='none' stroke='%23c99b52' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M28 28 H36 L34.6 50 L32 58 L29.4 50 Z' fill='%23c99b52'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Siete de Espadas",
+    "servesCuisine": "Espeto corrido",
+    "telephone": "+5492215682330",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Camino Centenario y 474",
+      "addressLocality": "City Bell",
+      "addressRegion": "Buenos Aires",
+      "addressCountry": "AR"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday", "Thursday"], "opens": "20:00", "closes": "00:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday", "Saturday"], "opens": "12:00", "closes": "16:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday", "Saturday"], "opens": "20:00", "closes": "01:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "12:00", "closes": "16:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "20:00", "closes": "00:00" }
+    ],
+    "sameAs": ["https://www.instagram.com/sietedeespadasespeto"]
+  }
+  </script>
+</head>
+<body>
+
+<!-- Definiciones SVG compartidas (espadas, empuñaduras y degradados dorados) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="goldS" x1="0" y1="0" x2=".3" y2="1">
+      <stop offset="0" stop-color="#f2ddb0"/>
+      <stop offset=".48" stop-color="#c99b52"/>
+      <stop offset="1" stop-color="#8b6224"/>
+    </linearGradient>
+    <linearGradient id="goldP" x1="0" y1="0" x2=".3" y2="1">
+      <stop offset="0" stop-color="#cfa460"/>
+      <stop offset=".5" stop-color="#b48742"/>
+      <stop offset="1" stop-color="#8a6328"/>
+    </linearGradient>
+    <linearGradient id="goldT" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ebd197"/>
+      <stop offset=".5" stop-color="#c99b52"/>
+      <stop offset="1" stop-color="#8f6626"/>
+    </linearGradient>
+    <!-- Espada completa -->
+    <symbol id="sword" viewBox="0 0 60 220">
+      <circle cx="30" cy="9" r="7.5" stroke="none"/>
+      <rect x="27.2" y="15.5" width="5.6" height="31" rx="1.4" stroke="none"/>
+      <path d="M10 54 C10 47 18 44.5 30 44.5 C42 44.5 50 47 50 54" fill="none" stroke-width="4.2" stroke-linecap="round"/>
+      <circle cx="10" cy="56.5" r="3.7" stroke="none"/>
+      <circle cx="50" cy="56.5" r="3.7" stroke="none"/>
+      <path fill-rule="evenodd" stroke="none" d="M25.4 47 H34.6 L33.4 176 L30 216 L26.6 176 Z M29.15 54 H30.85 V168 H29.15 Z"/>
+    </symbol>
+    <!-- Empuñadura superior -->
+    <symbol id="swordHilt" viewBox="0 0 60 72">
+      <circle cx="30" cy="11" r="8" stroke="none"/>
+      <path d="M26.5 17 H33.5 L34.8 46 H25.2 Z" stroke="none"/>
+      <path d="M10 57 C10 47.5 18.5 45.5 30 45.5 C41.5 45.5 50 47.5 50 57" fill="none" stroke-width="4.8" stroke-linecap="round"/>
+      <circle cx="10" cy="59.5" r="4" stroke="none"/>
+      <circle cx="50" cy="59.5" r="4" stroke="none"/>
+      <rect x="24.4" y="47" width="4.3" height="20" rx=".8" stroke="none"/>
+      <rect x="31.3" y="47" width="4.3" height="20" rx=".8" stroke="none"/>
+    </symbol>
+    <!-- Punta inferior de la espada -->
+    <symbol id="swordTip" viewBox="0 0 60 76">
+      <path fill-rule="evenodd" stroke="none" d="M24.4 2 H28.7 V40 H31.3 V2 H35.6 L34 48 L30 74 L26 48 Z"/>
+    </symbol>
+    <!-- Espada horizontal -->
+    <symbol id="hSword" viewBox="0 0 70 14">
+      <path d="M1 7 L10 5.6 H53 V8.4 H10 Z" stroke="none"/>
+      <rect x="52.5" y="1.5" width="2.2" height="11" rx="1" stroke="none"/>
+      <rect x="54" y="5.7" width="8" height="2.6" rx="1" stroke="none"/>
+      <circle cx="64.2" cy="7" r="2.7" stroke="none"/>
+    </symbol>
+    <!-- Divisor de dos espadas horizontales enfrentadas -->
+    <symbol id="twoSwords" viewBox="0 0 140 14">
+      <path d="M2 7 L10 5.8 H57 V8.2 H10 Z" stroke="none"/>
+      <rect x="56.5" y="2" width="2" height="10" rx=".9" stroke="none"/>
+      <rect x="58" y="5.8" width="6.5" height="2.4" rx=".8" stroke="none"/>
+      <circle cx="66.2" cy="7" r="2.2" stroke="none"/>
+      <path d="M138 7 L130 5.8 H83 V8.2 H130 Z" stroke="none"/>
+      <rect x="81.5" y="2" width="2" height="10" rx=".9" stroke="none"/>
+      <rect x="75.5" y="5.8" width="6.5" height="2.4" rx=".8" stroke="none"/>
+      <circle cx="73.8" cy="7" r="2.2" stroke="none"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- Barra superior minimalista de progreso de lectura -->
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- ============ NAVEGACIÓN PRINCIPAL ============ -->
+<nav class="nav" id="nav" aria-label="Principal">
+  <a class="brand" href="#inicio" aria-label="Siete de Espadas, ir al inicio">
+    <svg class="brand-sword sw-gold" viewBox="0 0 60 220" aria-hidden="true"><use href="#sword"/></svg>
+    <span class="brand-text">Siete <i>de</i> Espadas</span>
+  </a>
+
+  <button class="burger" id="burger" type="button" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navLinks">
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="nav-links" id="navLinks">
+    <a href="#experiencia" data-nav>El Ritual</a>
+    <a href="#espadas" data-nav>Las 7 Espadas</a>
+    <a href="#carta" data-nav>La Carta</a>
+    <a href="#reservas" data-nav>Reservas</a>
+    <a href="#ubicacion" data-nav>Ubicación</a>
+    <a class="btn btn-gold btn-sm nav-cta" href="#reservas">Reservar mesa</a>
+  </div>
+</nav>
+
+<!-- ====================================================================
+     MOMENTO 1 · HERO CINEMATOGRÁFICO
+     Atmósfera nocturna de brasas, arquitectura de varillado negro,
+     indicador en vivo de horario y acceso directo a reservar.
+     ==================================================================== -->
+<header class="hero" id="inicio">
+  <div class="hero-stage" aria-hidden="true">
+    <!-- ================================================================
+         FOTO REEMPLAZABLE · HERO FONDO ATMOSFÉRICO
+         Reemplazá el src="..." por tu foto nocturna de fuegos o fachada
+         ================================================================ -->
+    <div class="hero-media">
+      <img
+        src="assets/hero-salon.jpg"
+        alt="Salón y mesas de Siete de Espadas en City Bell"
+        width="1800"
+        height="1200"
+        fetchpriority="high"
+        decoding="async">
+    </div>
+
+    <!-- Resplandor cálido de brasa inferior y partículas en vivo -->
+    <div class="hero-ember-glow"></div>
+    <canvas id="fireCanvas"></canvas>
+    <div class="hero-vignette"></div>
+  </div>
+
+  <div class="hero-inner">
+    <!-- Indicador en vivo de Abierto / Cerrado ahora -->
+    <div class="hero-live">
+      <div class="status-chip" id="openStatus" role="status">
+        <i></i>
+        <span>Calculando horario…</span>
+      </div>
+    </div>
+
+    <div class="hero-lockup">
+      <div class="hero-emblem" aria-hidden="true">
+        <svg class="hero-sword sw-gold" viewBox="0 0 60 72"><use href="#swordHilt"/></svg>
+      </div>
+
+      <h1 class="hero-title" aria-label="Siete de Espadas · Espeto Corrido">
+        <span class="ht-row ht-top">SIETE</span>
+        <span class="ht-row ht-mid">
+          <svg class="mini sw-gold" viewBox="0 0 70 14" aria-hidden="true"><use href="#hSword"/></svg>
+          <b>DE</b>
+          <svg class="mini r sw-gold" viewBox="0 0 70 14" aria-hidden="true"><use href="#hSword"/></svg>
+        </span>
+        <span class="ht-row ht-bot">ESPADAS</span>
+      </h1>
+
+      <p class="hero-kicker">Espeto Corrido · City Bell</p>
+    </div>
+
+    <p class="hero-lead">
+      El fuego ya está encendido. Siete cortes de carnes seleccionadas
+      llegan a tu mesa, uno por uno, servidos directamente desde cada espada.
+    </p>
+
+    <div class="hero-cta">
+      <a class="btn btn-gold" href="#reservas">Reservar mesa</a>
+      <a class="btn btn-ghost" href="#carta" data-open-book>Ver la carta</a>
+    </div>
+  </div>
+
+  <a class="scroll-line" href="#experiencia" aria-label="Descubrir el ritual del espeto corrido">
+    <span>El Ritual</span>
+    <i></i>
+  </a>
+</header>
+
+<main>
+<!-- ====================================================================
+     MOMENTO 2 · EL RITUAL DEL ESPETO CORRIDO (SCROLLYTELLING FLUIDO)
+     Narrativa visual a pantalla completa: Recepción a las brasas,
+     Salad bar libre, y el Desfile de los 7 cortes en espada en la mesa.
+     ==================================================================== -->
+<section class="ritual" id="experiencia">
+
+  <!-- Manifiesto inaugural atado al scroll -->
+  <div class="ritual-manifesto">
+    <div class="wrap manifesto-in reveal">
+      <span class="eyebrow">El ritual del espeto corrido · Paso a paso</span>
+      <h2 class="manifesto-title">
+        7 cortes. <em>7 espadas.</em><br>
+        Una experiencia completa.
+      </h2>
+      <p class="manifesto-lead">
+        Nuestro espeto corrido es una ceremonia sin prisa alrededor del fuego.
+        Desde el primer bocado recién salido de las brasas hasta el último corte
+        trinchado al hilo sobre tu plato, cada momento sigue tu propio ritmo.
+      </p>
+    </div>
+
+    <!-- Dinámica del primer espeto corrido de City Bell (4 momentos fluidos sin recuadros) -->
+    <div class="dynamics-flow wrap reveal">
+      <div class="dynamics-tagline">
+        <span class="dynamics-dot" aria-hidden="true"></span>
+        <span>Primer espeto corrido de City Bell · Cómo funciona</span>
+        <span class="dynamics-dot" aria-hidden="true"></span>
+      </div>
+
+      <div class="dynamics-grid">
+        <div class="dynamics-step">
+          <div class="dyn-step-head">
+            <span class="dyn-num">01</span>
+            <span class="dyn-step-tag">Apertura al fuego</span>
+          </div>
+          <h3 class="dyn-title">Bienvenida</h3>
+          <p class="dyn-desc">
+            La bienvenida tiene el sabor de una empanada de carne artesanal cortada a cuchillo y selección de achuras y embutidos a las brasas.
+          </p>
+          <div class="dyn-visuals dyn-visuals-dual">
+            <figure class="dyn-fig">
+              <img
+                src="assets/fotos/empanadas-tabla.jpg"
+                alt="Empanadas de carne artesanal cortadas a cuchillo horneadas en horno de barro"
+                width="600"
+                height="400"
+                loading="lazy"
+                decoding="async">
+              <figcaption>Empanadas al horno</figcaption>
+            </figure>
+            <figure class="dyn-fig">
+              <img
+                src="assets/fotos/achuras-brasas.jpg"
+                alt="Achuras y embutidos a las brasas dorados al fuego de leña"
+                width="600"
+                height="400"
+                loading="lazy"
+                decoding="async">
+              <figcaption>Achuras a las brasas</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="dynamics-step">
+          <div class="dyn-step-head">
+            <span class="dyn-num">02</span>
+            <span class="dyn-step-tag">Frescura &amp; Rescoldo</span>
+          </div>
+          <h3 class="dyn-title">Salad Bar Libre</h3>
+          <p class="dyn-desc">
+            Ensaladas, vegetales asados, quesos y fiambres para elegir y combinar a tu gusto, todas las veces que quieras.
+          </p>
+          <div class="dyn-visuals">
+            <figure class="dyn-fig">
+              <img
+                src="assets/fotos/salad-bar-quesos.jpg"
+                alt="Salad bar libre de Siete de Espadas: vegetales asados, fiambres y selección de quesos"
+                width="600"
+                height="400"
+                loading="lazy"
+                decoding="async">
+              <figcaption>Salad Bar &amp; Fiambres</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="dynamics-step">
+          <div class="dyn-step-head">
+            <span class="dyn-num">03</span>
+            <span class="dyn-step-tag">El Ritual Central</span>
+          </div>
+          <h3 class="dyn-title">El Show de las Espadas</h3>
+          <p class="dyn-desc">
+            Siete espadas con cortes seleccionados y bandejas con achuras y embutidos van pasando durante el servicio. Cada vuelta trae algo distinto para ofrecerte. Vos elegís qué probar, qué repetir y cuándo volver al salad bar. El ritmo lo pone tu mesa.
+          </p>
+          <div class="dyn-visuals">
+            <figure class="dyn-fig">
+              <img
+                src="assets/fotos/espadas-parrilla-brasas.jpg"
+                alt="El show de las 7 espadas al calor de las brasas"
+                width="600"
+                height="400"
+                loading="lazy"
+                decoding="async">
+              <figcaption>Espadas a las brasas</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="dynamics-step">
+          <div class="dyn-step-head">
+            <span class="dyn-num">04</span>
+            <span class="dyn-step-tag">Coronación</span>
+          </div>
+          <h3 class="dyn-title">Cierre</h3>
+          <p class="dyn-desc">
+            Postre de autor o café a elección para coronar el encuentro.
+          </p>
+          <div class="dyn-visuals">
+            <figure class="dyn-fig">
+              <img
+                src="assets/fotos/postre-cierre.jpg"
+                alt="Postre de autor: Tiramisú artesanal de la casa servido con café"
+                width="600"
+                height="400"
+                loading="lazy"
+                decoding="async">
+              <figcaption>Postre de autor &amp; café</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <!-- Relato auténtico de la casa -->
+      <div class="dynamics-story reveal">
+        <span class="story-sign">7 de Espadas · El fuego, la variedad y el placer de compartir una buena mesa.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================================================================
+       ACTO 03 · EL DESFILE DE LAS 7 ESPADAS (SCROLLYTELLING CENTRAL)
+       Siete cortes de carnes seleccionadas llegan a tu mesa, uno por uno,
+       servidos directamente desde cada espada.
+       ================================================================== -->
+  <div class="swords-parade" id="espadas">
+    <!-- Encabezado editorial del desfile -->
+    <div class="parade-intro wrap reveal">
+      <div class="spread-step-meta center">
+        <span class="step-tag">El corazón del espeto corrido</span>
+      </div>
+      <h2>Las <em>7 Espadas</em> en tu mesa</h2>
+      <p class="parade-lead">
+        Siete cortes de carnes seleccionadas llegan a tu mesa, uno por uno,
+        servidos directamente desde cada espada.
+      </p>
+      <p class="parade-optional">
+        <b>Opcional:</b> Reemplazar las 7 espadas por un plato de nuestra cocina.
+      </p>
+    </div>
+
+    <!-- Barra / Riel flotante de progreso de las 7 Espadas (Desktop & Mobile) -->
+    <div class="parade-hud" id="paradeHud" aria-label="Progreso del desfile de las 7 espadas">
+      <div class="parade-hud-in">
+        <span class="hud-label" id="hudCurrentLabel">ESPADA I / VII</span>
+        <div class="hud-swords" id="hudSwords" role="tablist" aria-label="Ir a cada una de las 7 espadas">
+          <button type="button" class="hud-sw active" data-sword-target="0" role="tab" aria-selected="true" aria-label="Espada I">
+            <svg class="sw-gold" viewBox="0 0 60 220" aria-hidden="true"><use href="#sword"/></svg>
+            <span>I</span>
+          </button>
+          <button type="button" class="hud-sw" data-sword-target="1" role="tab" aria-selected="false" aria-label="Espada II">
+            <svg class="sw-gold" viewBox="0 0 60 220" aria-hidden="true"><use href="#sword"/></svg>
+            <span>II</span>
+          </button>
+          <button type="button" class="hud-sw" data-sword-target="2" role="tab" aria-selected="false" aria-label="Espada III">
+            <svg class="sw-gold" viewBox="0 0 60 220" aria-hidden="true"><use href="#sword"/></svg>
+            <span>III</span>
+          </button>
+          <button type="button" class="hud-sw" data-sword-target="3" role="tab" aria-selected="false" aria-label="Espada IV">
+            <svg class="sw-gold" viewBox="0 0 60 220" aria-hidden="true"><use href="#sword"/></svg>
+            <span>IV</span>
+          </button>
+          <button type="button" class="hud-sw" data-sword-target="4" role="tab" aria-selected="false" aria-label="Espada V">
+            <svg class="sw-gold" viewBox="0 0 60 220" aria-hidden="true"><use href="#sword"/></svg>
+            <span>V</span>
+          </button>
+          <button type="button" class="hud-sw" data-sword-target="5" role="tab" aria-selected="false" aria-label="Espada VI">
+            <svg class="sw-gold" viewBox="0 0 60 220" aria-hidden="true"><use href="#sword"/></svg>
+            <span>VI</span>
+          </button>
+          <button type="button" class="hud-sw" data-sword-target="6" role="tab" aria-selected="false" aria-label="Espada VII">
+            <svg class="sw-gold" viewBox="0 0 60 220" aria-hidden="true"><use href="#sword"/></svg>
+            <span>VII</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Secuencia fluida de las 7 espadas oficiales (cortes al espeto con imágenes fieles) -->
+    <div class="sword-chapters">
+
+      <!-- ESPADA I -->
+      <article class="sword-chapter is-active" data-sword-index="0" id="espada-1">
+        <figure class="sword-visual" data-parallax="0.06">
+          <img
+            src="assets/fotos/corte-asador-cuchillo.jpg"
+            alt="Espada I: Picaña con su clásico manto de grasa dorada, trinchada al plato en la mesa"
+            width="1200"
+            height="800"
+            loading="lazy"
+            decoding="async">
+          <div class="sword-visual-shade" aria-hidden="true"></div>
+          <figcaption class="sword-visual-tag">Espada I · Picaña</figcaption>
+        </figure>
+        <div class="sword-narrative">
+          <div class="sn-roman" aria-hidden="true">I</div>
+          <span class="sn-kicker">Espada I de VII · Corte Insignia</span>
+          <h3>Picaña</h3>
+          <p>
+            El corte emblema, con su clásico manto de grasa dorada, trinchada al plato en la mesa.
+          </p>
+        </div>
+      </article>
+
+      <!-- ESPADA II -->
+      <article class="sword-chapter" data-sword-index="1" id="espada-2">
+        <figure class="sword-visual" data-parallax="0.06">
+          <img
+            src="assets/fotos/costillar-asado.jpg"
+            alt="Espada II: Costillar asado pacientemente a fuego lento hasta desprenderse del hueso"
+            width="1200"
+            height="800"
+            loading="lazy"
+            decoding="async">
+          <div class="sword-visual-shade" aria-hidden="true"></div>
+          <figcaption class="sword-visual-tag">Espada II · Costillar</figcaption>
+        </figure>
+        <div class="sword-narrative">
+          <div class="sn-roman" aria-hidden="true">II</div>
+          <span class="sn-kicker">Espada II de VII · Fuego Lento</span>
+          <h3>Costillar</h3>
+          <p>
+            Asado pacientemente a fuego lento hasta desprenderse del hueso.
+          </p>
+        </div>
+      </article>
+
+      <!-- ESPADA III -->
+      <article class="sword-chapter" data-sword-index="2" id="espada-3">
+        <figure class="sword-visual" data-parallax="0.06">
+          <img
+            src="assets/fotos/pollo-brasas.jpg"
+            alt="Espada III: Pollo a las brasas marinado, dorado y crocante por fuera, jugoso por dentro"
+            width="1200"
+            height="800"
+            loading="lazy"
+            decoding="async">
+          <div class="sword-visual-shade" aria-hidden="true"></div>
+          <figcaption class="sword-visual-tag">Espada III · Pollo a las Brasas</figcaption>
+        </figure>
+        <div class="sword-narrative">
+          <div class="sn-roman" aria-hidden="true">III</div>
+          <span class="sn-kicker">Espada III de VII · Aves a las Brasas</span>
+          <h3>Pollo a las Brasas</h3>
+          <p>
+            Piezas marinadas, doradas y crocantes por fuera, jugosas por dentro.
+          </p>
+        </div>
+      </article>
+
+      <!-- ESPADA IV -->
+      <article class="sword-chapter" data-sword-index="3" id="espada-4">
+        <figure class="sword-visual" data-parallax="0.06">
+          <img
+            src="assets/fotos/corte-punto-jugoso.jpg"
+            alt="Espada IV: Bife de chorizo sellado a fuego vivo con centro tierno y jugoso"
+            width="1200"
+            height="800"
+            loading="lazy"
+            decoding="async">
+          <div class="sword-visual-shade" aria-hidden="true"></div>
+          <figcaption class="sword-visual-tag">Espada IV · Bife de Chorizo</figcaption>
+        </figure>
+        <div class="sword-narrative">
+          <div class="sn-roman" aria-hidden="true">IV</div>
+          <span class="sn-kicker">Espada IV de VII · Sello de Fuego</span>
+          <h3>Bife de Chorizo</h3>
+          <p>
+            Sellado a fuego vivo con centro tierno y jugoso.
+          </p>
+        </div>
+      </article>
+
+      <!-- ESPADA V -->
+      <article class="sword-chapter" data-sword-index="4" id="espada-5">
+        <figure class="sword-visual" data-parallax="0.06">
+          <img
+            src="assets/fotos/ojo-de-bife.jpg"
+            alt="Espada V: Ojo de bife servido al punto exacto que elija cada mesa"
+            width="1200"
+            height="800"
+            loading="lazy"
+            decoding="async">
+          <div class="sword-visual-shade" aria-hidden="true"></div>
+          <figcaption class="sword-visual-tag">Espada V · Ojo de Bife</figcaption>
+        </figure>
+        <div class="sword-narrative">
+          <div class="sn-roman" aria-hidden="true">V</div>
+          <span class="sn-kicker">Espada V de VII · Punto Exacto</span>
+          <h3>Ojo de Bife</h3>
+          <p>
+            Servido al punto exacto que elija cada mesa.
+          </p>
+        </div>
+      </article>
+
+      <!-- ESPADA VI -->
+      <article class="sword-chapter" data-sword-index="5" id="espada-6">
+        <figure class="sword-visual" data-parallax="0.06">
+          <img
+            src="assets/fotos/colita-cuadril.jpg"
+            alt="Espada VI: Colita de cuadril vacuna asada a las brasas y cortada en rebanadas jugosas con costra especiada"
+            width="1200"
+            height="800"
+            loading="lazy"
+            decoding="async">
+          <div class="sword-visual-shade" aria-hidden="true"></div>
+          <figcaption class="sword-visual-tag">Espada VI · Colita de Cuadril</figcaption>
+        </figure>
+        <div class="sword-narrative">
+          <div class="sn-roman" aria-hidden="true">VI</div>
+          <span class="sn-kicker">Espada VI de VII · Costra Especiada</span>
+          <h3>Colita de Cuadril</h3>
+          <p>
+            Cocción pareja, centro rosado y tierno, y una costra especiada sellada al calor de las brasas.
+          </p>
+        </div>
+      </article>
+
+      <!-- ESPADA VII -->
+      <article class="sword-chapter" data-sword-index="6" id="espada-7">
+        <figure class="sword-visual" data-parallax="0.06">
+          <img
+            src="assets/fotos/asador-espada-vertical.jpg"
+            alt="Espada VII: Bondiola de cerdo braseada y caramelizada al calor de las brasas"
+            width="1200"
+            height="800"
+            loading="lazy"
+            decoding="async">
+          <div class="sword-visual-shade" aria-hidden="true"></div>
+          <figcaption class="sword-visual-tag">Espada VII · Bondiola de Cerdo</figcaption>
+        </figure>
+        <div class="sword-narrative">
+          <div class="sn-roman" aria-hidden="true">VII</div>
+          <span class="sn-kicker">Espada VII de VII · El Séptimo Corte</span>
+          <h3>Bondiola de Cerdo</h3>
+          <p>
+            Braseada y caramelizada al calor de las brasas.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- CIERRE DE VALOR (Todo incluido) -->
+  <div class="ritual-finale wrap">
+    <div class="finale-pricing reveal">
+      <div class="fp-item">
+        <span class="fp-label">Menú 7 de Espadas · Todo incluido</span>
+        <strong class="fp-amount">$<span id="priceAdult" data-count="45000">45.000</span></strong>
+        <span class="fp-sub">por persona</span>
+      </div>
+      <div class="fp-sep" aria-hidden="true"></div>
+      <div class="fp-item">
+        <span class="fp-label">Menores (de 2 a 12 años)</span>
+        <strong class="fp-amount">$<span id="priceKid" data-count="30000">30.000</span></strong>
+        <span class="fp-sub">por menor</span>
+      </div>
+      <div class="fp-cta">
+        <a class="btn btn-gold" href="#reservas">Reservar mesa</a>
+        <a class="btn btn-ghost" href="#carta" data-open-book>Ver la carta</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERLUDIO ATMOSFÉRICO: NUESTRA CASA · SALÓN Y BRASAS A LA VISTA -->
+  <div class="architecture-interlude" id="salon">
+    <div class="arch-backdrop" data-parallax="0.1">
+      <img
+        src="assets/detalle-mesas.jpg"
+        alt="Salón y mesas con iluminación cálida de Siete de Espadas en City Bell"
+        width="1800"
+        height="1200"
+        loading="lazy"
+        decoding="async">
+      <div class="arch-shade" aria-hidden="true"></div>
+    </div>
+    <div class="wrap arch-content reveal">
+      <span class="eyebrow">Nuestra Casa · Cno. Centenario y 474</span>
+      <h2>El Salón — Brasas a la vista, cava seleccionada<br>y el ritmo del espeto en <em>City Bell</em></h2>
+      <p>
+        Madera cálida, fuegos encendidos y mesas amplias para compartir sin prisa alrededor del ritual.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================
+     MOMENTO 3 · LA CARTA
+     Las 7 espadas, cocina & postres de autor.
+     ==================================================================== -->
+<section class="section carta" id="carta">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Carta gastronómica</span>
+      <h2>La <em>Carta</em></h2>
+      <p>
+        Las 7 espadas, cocina &amp; postres de autor.
+      </p>
+    </div>
+  </div>
+
+  <div class="book-wrap reveal">
+    <!-- Pestañas de acceso directo estilo folleto -->
+    <div class="book-tabs" id="bookTabs" role="group" aria-label="Secciones de la carta">
+      <button type="button" data-page="cover" class="active">Portada</button>
+      <button type="button" data-page="menu">Menú 7 de Espadas</button>
+      <button type="button" data-page="platos">Los 7 Platos</button>
+      <button type="button" data-page="postres">Los 7 Postres</button>
+      <button type="button" data-page="close" class="tab-close" aria-label="Cerrar la carta">✕ Cerrar carta</button>
+    </div>
+
+    <div class="book-stage" id="bookStage" tabindex="0" role="region" aria-label="Carta de Siete de Espadas. Deslizá las hojas para recorrer el menú.">
+      <div class="book-light" aria-hidden="true"></div>
+      <div class="book" id="book"></div>
+    </div>
+
+    <div class="book-ui">
+      <button class="bk-btn" id="bkPrev" type="button" aria-label="Hoja anterior">‹</button>
+      <div class="bk-status">
+        <strong id="bkLabel">Cubierta</strong>
+        <span id="bkHint">Tocá la cubierta o deslizá para abrir</span>
+      </div>
+      <button class="bk-btn" id="bkNext" type="button" aria-label="Hoja siguiente">›</button>
+    </div>
+
+    <div class="list-toggle">
+      <button class="link-btn" id="listToggle" type="button" aria-expanded="false" aria-controls="menuList">
+        Ver lectura en texto plano
+      </button>
+    </div>
+    <div class="menu-list wrap" id="menuList" hidden></div>
+  </div>
+</section>
+
+<!-- ====================================================================
+     MOMENTO 4 · RESERVA LIMPIA & UBICACIÓN
+     Calendario interactivo con validación real de días/turnos, pase de
+     reserva minimalista directo a WhatsApp y mapa oscuro de City Bell.
+     ==================================================================== -->
+<section class="section reservas" id="reservas">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Reservas online · Sin cargo</span>
+      <h2>Reservá tu <em>mesa</em></h2>
+      <p>
+        Elegí fecha, turno y cantidad de comensales. Confirmamos tu lugar de forma
+        directa e inmediata por WhatsApp.
+      </p>
+    </div>
+
+    <div class="res-grid">
+      <form class="res-form reveal" id="resForm" autocomplete="off" novalidate>
+        <!-- 1. Fecha -->
+        <fieldset class="res-step">
+          <legend><span>01</span> Seleccioná la fecha</legend>
+          <div class="cal" id="cal">
+            <div class="cal-head">
+              <button type="button" class="cal-nav" id="calPrev" aria-label="Mes anterior">‹</button>
+              <strong id="calTitle">Mes</strong>
+              <button type="button" class="cal-nav" id="calNext" aria-label="Mes siguiente">›</button>
+            </div>
+            <div class="cal-week" aria-hidden="true">
+              <span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span>
+            </div>
+            <div class="cal-grid" id="calGrid" role="grid"></div>
+            <p class="cal-note"><i></i> Abierto de miércoles a domingo. Lunes y martes cerrado.</p>
+          </div>
+        </fieldset>
+
+        <!-- 2. Turno -->
+        <fieldset class="res-step">
+          <legend><span>02</span> Elegí el turno</legend>
+          <div class="turns" id="turns">
+            <button type="button" class="turn" data-turn="mediodia" disabled>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1"/></svg>
+              <b>Mediodía</b>
+              <small>12:00 a 16:00 hs</small>
+            </button>
+            <button type="button" class="turn" data-turn="noche" disabled>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+              <b>Noche</b>
+              <small>20:00 a 00:00 hs</small>
+            </button>
+          </div>
+          <p class="hint" id="turnHint">Elegí primero una fecha en el calendario.</p>
+
+          <!-- Selector táctil de horarios integrados (sin <select> nativo) -->
+          <div class="time-picker" id="timePicker" hidden>
+            <span class="picker-label">Horario estimado de llegada</span>
+            <div class="time-grid" id="timeGrid" role="radiogroup" aria-label="Horario estimado"></div>
+          </div>
+        </fieldset>
+
+        <!-- 3. Comensales unificado -->
+        <fieldset class="res-step">
+          <legend><span>03</span> Cantidad de Comensales</legend>
+          <div class="guest-selector">
+            <div class="guest-stepper">
+              <div>
+                <b>Comensales</b>
+                <small>En la misma mesa</small>
+              </div>
+              <div class="ctrl">
+                <button type="button" id="guestMinus" aria-label="Menos comensales">−</button>
+                <output id="guestsOut">2</output>
+                <button type="button" id="guestPlus" aria-label="Más comensales">+</button>
+              </div>
+            </div>
+            <div class="guest-quick-chips" aria-label="Selección rápida de comensales">
+              <button type="button" class="guest-chip active" data-guests="2">2 personas</button>
+              <button type="button" class="guest-chip" data-guests="4">4 personas</button>
+              <button type="button" class="guest-chip" data-guests="6">6 personas</button>
+              <button type="button" class="guest-chip" data-guests="8">8+ personas</button>
+            </div>
+          </div>
+          <p class="hint" id="groupHint"></p>
+        </fieldset>
+
+        <!-- 4. Nombre y Apellido (Obligatorio) -->
+        <fieldset class="res-step">
+          <legend><span>04</span> Titular de la Reserva</legend>
+          <label class="field" for="nameIn">
+            <span>Nombre y Apellido <em class="req">* obligatorio</em></span>
+            <input type="text" id="nameIn" placeholder="Ej. Juan Pérez" maxlength="60" required autocomplete="name">
+          </label>
+        </fieldset>
+      </form>
+
+      <!-- Detalle de la Reserva Minimalista -->
+      <aside class="res-side">
+        <div class="pass-card" id="ticket">
+          <div class="pass-head">
+            <svg class="sw-gold" viewBox="0 0 60 72" aria-hidden="true"><use href="#swordHilt"/></svg>
+            <div>
+              <small>Siete de Espadas · City Bell</small>
+              <strong>Tu Reserva</strong>
+            </div>
+          </div>
+
+          <dl class="pass-list">
+            <div>
+              <dt>Fecha</dt>
+              <dd id="tkDate">—</dd>
+            </div>
+            <div>
+              <dt>Turno</dt>
+              <dd id="tkTurn">—</dd>
+            </div>
+            <div>
+              <dt>Comensales</dt>
+              <dd id="tkPeople">2 personas</dd>
+            </div>
+            <div>
+              <dt>A nombre de</dt>
+              <dd id="tkName">—</dd>
+            </div>
+          </dl>
+
+          <a class="btn btn-gold btn-wa is-disabled" id="waBtn" href="https://wa.me/5492215682330" target="_blank" rel="noopener" aria-disabled="true">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.04 3C9.4 3 4 8.4 4 15.04c0 2.12.55 4.18 1.6 6L4 29l8.1-1.56a12 12 0 0 0 3.94.66C22.68 28.1 28 22.7 28 16.06 28 9.4 22.7 3 16.04 3zm0 2.2c5.45 0 9.8 4.4 9.8 9.86 0 5.46-4.35 9.86-9.8 9.86-1.3 0-2.54-.25-3.7-.72l-.52-.2-4.38.84.9-4.2-.3-.55a9.7 9.7 0 0 1-1.38-5.03c0-5.46 4.4-9.86 9.38-9.86zm-3.4 4.9c-.22 0-.58.08-.88.4-.3.34-1.16 1.14-1.16 2.78 0 1.64 1.2 3.22 1.36 3.44.17.22 2.34 3.72 5.76 5.06 2.84 1.1 3.42.88 4.04.82.62-.06 2-.82 2.28-1.6.28-.8.28-1.46.2-1.6-.08-.14-.3-.22-.64-.4-.34-.16-2-.98-2.3-1.1-.3-.1-.54-.16-.76.17-.22.34-.88 1.1-1.07 1.32-.2.22-.4.25-.74.08-.34-.16-1.44-.54-2.74-1.7-1-.9-1.7-2.02-1.9-2.36-.2-.34-.02-.52.15-.7.15-.15.34-.4.5-.6.18-.2.23-.34.35-.56.1-.22.05-.42-.03-.6-.08-.17-.74-1.84-1.04-2.5-.27-.64-.55-.56-.76-.57z"/></svg>
+            <span>Reservar por WhatsApp</span>
+          </a>
+
+          <p class="pass-note" id="waHint">
+            Completá fecha, turno y tu nombre para habilitar la reserva por WhatsApp.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- UBICACIÓN, HORARIOS REALES Y MAPA OSCURO -->
+<section class="section ubic" id="ubicacion">
+  <div class="wrap">
+    <div class="ubic-grid">
+      <div class="ubic-info reveal">
+        <span class="eyebrow">Ubicación &amp; horarios</span>
+        <h2>Cno. Centenario y 474, <em>City Bell</em></h2>
+
+        <div class="map-btns">
+          <a class="btn btn-gold btn-sm" href="https://www.google.com/maps/search/?api=1&query=Camino+Centenario+y+474%2C+City+Bell%2C+Buenos+Aires%2C+Argentina" target="_blank" rel="noopener">Google Maps</a>
+          <a class="btn btn-ghost btn-sm" href="https://maps.apple.com/?q=Camino+Centenario+y+474%2C+City+Bell%2C+Buenos+Aires" target="_blank" rel="noopener">Apple Maps</a>
+          <a class="btn btn-ghost btn-sm" href="https://waze.com/ul?q=Camino%20Centenario%20y%20474%2C%20City%20Bell&navigate=yes" target="_blank" rel="noopener">Waze</a>
+        </div>
+
+        <h3 class="hrs-title">Horarios de atención</h3>
+        <ul class="hours" id="hoursList">
+          <li data-days="3,4"><span>Miércoles y Jueves</span><b>20:00 a 00:00 hs</b></li>
+          <li data-days="5,6"><span>Viernes y Sábados</span><b>12:00 a 16:00 y 20:00 a 01:00 hs</b></li>
+          <li data-days="0"><span>Domingos</span><b>12:00 a 16:00 y 20:00 a 00:00 hs</b></li>
+          <li data-days="1,2" class="closed"><span>Lunes y Martes</span><b>Cerrado</b></li>
+        </ul>
+
+        <div class="status-chip inline" id="openStatus2" role="status">
+          <i></i>
+          <span>Calculando horario…</span>
+        </div>
+
+        <div class="contact-links">
+          <a href="https://wa.me/5492215682330" target="_blank" rel="noopener">
+            <small>WhatsApp Reservas</small>
+            <b>+54 9 221 568-2330</b>
+          </a>
+          <a href="https://www.instagram.com/sietedeespadasespeto" target="_blank" rel="noopener">
+            <small>Instagram Oficial</small>
+            <b>@sietedeespadasespeto</b>
+          </a>
+        </div>
+      </div>
+
+      <div class="map reveal">
+        <div class="map-fallback"><span>Cno. Centenario y 474 · City Bell</span></div>
+        <iframe
+          title="Mapa: Camino Centenario y 474, City Bell"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=Camino%20Centenario%20y%20474%2C%20City%20Bell&z=15&output=embed">
+        </iframe>
+        <div class="map-actions">
+          <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Camino+Centenario+y+474%2C+City+Bell%2C+Buenos+Aires%2C+Argentina" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            <span>Google Maps</span>
+          </a>
+          <a class="map-btn" href="https://maps.apple.com/?q=Camino+Centenario+y+474%2C+City+Bell%2C+Buenos+Aires" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.93-2.85-.9.04-1.99.6-2.64 1.35-.57.65-1.07 1.7-0.94 2.72 1 .08 2.03-.47 2.65-1.22z"/></svg>
+            <span>Apple Maps</span>
+          </a>
+          <a class="map-btn" href="https://waze.com/ul?q=Camino%20Centenario%20y%20474%2C%20City%20Bell&navigate=yes" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a9 9 0 0 0-9 9c0 3.6 2.1 6.7 5.2 8.1v2.9l3.5-1.9c.1 0 .2 0 .3 0a9 9 0 0 0 0-18.1zm-3.5 10a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm7 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm-3.5 4c-2.3 0-4-1.3-4.4-2.8h8.8c-.4 1.5-2.1 2.8-4.4 2.8z"/></svg>
+            <span>Waze</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-in">
+    <svg class="sw-gold foot-sword" viewBox="0 0 60 220" aria-hidden="true"><use href="#sword"/></svg>
+    <div class="foot-brand">Siete <i>de</i> Espadas</div>
+    <p>Espeto Corrido · Cno. Centenario y 474, City Bell</p>
+    <div class="foot-links">
+      <a href="#experiencia">El Ritual</a>
+      <a href="#espadas">Las 7 Espadas</a>
+      <a href="#carta">La Carta</a>
+      <a href="#reservas">Reservas</a>
+      <a href="https://wa.me/5492215682330" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://www.instagram.com/sietedeespadasespeto" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <small>© <span id="year">2026</span> Siete de Espadas · Todos los derechos reservados.</small>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
