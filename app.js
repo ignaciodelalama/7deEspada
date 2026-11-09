@@ -16,7 +16,7 @@
     return d;
   };
 
-  let WA_NUMBER = '5492215682330';
+  let WA_NUMBER = '5492216702986';
   const TZ = 'America/Argentina/Buenos_Aires';
 
   /* ==========================================================================
@@ -530,7 +530,13 @@
             </g>
             <text x="110" y="281" font-size="11.5" letter-spacing="2.4" text-anchor="middle" fill="url(#goldT)" stroke="#12110f" stroke-width="3" paint-order="stroke">ESPETO CORRIDO</text>
           </svg>
-        </div><div class="cover-edge"></div></div>`,
+        </div>
+        <div class="cover-tap-indicator" aria-hidden="true">
+          <span class="tap-ring"></span>
+          <span class="tap-txt">Tocá para abrir la carta</span>
+          <svg class="tap-arrow" viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M6 3.5l4.5 4.5-4.5 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="cover-edge"></div></div>`,
       coverBack: () => '<div class="cover-face leather back-cover"><div class="cover-glint"></div><div class="cover-edge"></div></div>',
       coverInside: () => `<div class="cover-face leather"><div class="inside-face"><div>
         <svg class="sw-gold" viewBox="0 0 60 72" aria-hidden="true"><use href="#swordHilt"/></svg>
