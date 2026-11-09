@@ -1878,6 +1878,13 @@ html.js .reveal.in {
   line-height: 1.32;
 }
 .pc .opt b { font-weight: 700; }
+.pc .opt-replace {
+  font-family: var(--ff-serif);
+  font-style: italic;
+  font-size: calc(var(--u) * 2.1 * var(--fs));
+  color: #6b5c47;
+  margin-top: calc(var(--u) * 1.2);
+}
 
 .pc .foot {
   margin-top: auto;
@@ -3114,125 +3121,152 @@ html.js .reveal.in {
     padding: 4px 2px;
   }
 
-  /* Libreta 3D en mobile: proporción vertical estilizada y balance tipográfico para que todo el contenido respire */
+  /* Libreta 3D en mobile: tamaño compacto original, contenido 100% prolijo y ordenado */
   .book-stage {
-    --ar: .48;
-    --pw: min(82vw, 335px);
+    --ar: .58;
+    --pw: min(80vw, 325px);
     --ph: calc(var(--pw) / var(--ar));
-    --m: calc(var(--pw) * .028);
+    --m: calc(var(--pw) * .03);
     --u: calc(var(--pw) / 100);
     min-height: calc(var(--ph) + var(--m) * 2 + 20px);
-    padding: 12px 0 16px;
+    padding: 10px 0 16px;
   }
   .book[data-mode="single"] {
     --fs: 1.0;
     box-shadow:
-      0 26px 60px -14px rgba(0, 0, 0, 0.95),
-      0 10px 24px -6px rgba(0, 0, 0, 0.7),
+      0 20px 48px -12px rgba(0, 0, 0, 0.95),
+      0 8px 20px -6px rgba(0, 0, 0, 0.7),
       inset 0 0 0 1px rgba(255, 255, 255, 0.05);
-    border-radius: 4px 12px 12px 4px;
+    border-radius: 4px 10px 10px 4px;
   }
   .book[data-mode="single"] .cover-band {
     left: 50%;
     right: auto;
     transform: translateX(-50%);
     width: 78%;
-    box-shadow: 0 0 30px rgba(0, 0, 0, .8), inset 0 0 1px rgba(255, 255, 255, .08);
+    box-shadow: 0 0 25px rgba(0, 0, 0, .8), inset 0 0 1px rgba(255, 255, 255, .08);
+  }
+  .book[data-mode="single"] .page .frame {
+    inset: 3% 4%;
+  }
+  .book[data-mode="single"] .page .ci.tl {
+    top: 1.8%;
+    left: 3.2%;
+  }
+  .book[data-mode="single"] .page .ci.br {
+    bottom: 1.8%;
+    right: 3.2%;
   }
   .book[data-mode="single"] .pc {
-    inset: 5.5% 7.5% 5.5%;
+    inset: 4.5% 6% 4.2%;
   }
+
+  /* Portada y elementos decorativos */
   .book[data-mode="single"] .pc .hilt {
-    width: calc(var(--u) * 6.8);
-    margin-bottom: calc(var(--u) * .6);
+    width: calc(var(--u) * 6);
+    margin-bottom: calc(var(--u) * .4);
   }
   .book[data-mode="single"] .pc .ttl {
-    font-size: clamp(0.95rem, calc(var(--u) * 3.3), 1.15rem);
-    margin-bottom: calc(var(--u) * .7);
+    font-size: clamp(0.90rem, calc(var(--u) * 3.0), 1.06rem);
+    margin-bottom: calc(var(--u) * .5);
     letter-spacing: .14em;
   }
   .book[data-mode="single"] .pc .lead {
-    font-size: clamp(.72rem, calc(var(--u) * 2.35), .84rem);
-    line-height: 1.28;
+    font-size: clamp(.66rem, calc(var(--u) * 2.15), .76rem);
+    line-height: 1.25;
     color: #4b3e2d;
-    margin-bottom: calc(var(--u) * .4);
+    margin-bottom: calc(var(--u) * .3);
   }
+
+  /* Bloques del menú (Bienvenida, Salad Bar, 7 Espadas, Bebida, Postre) */
   .book[data-mode="single"] .pc .blk {
-    margin-top: calc(var(--u) * 0.9);
+    margin-top: calc(var(--u) * 0.65);
   }
   .book[data-mode="single"] .pc .blk h4 {
-    font-size: clamp(.75rem, calc(var(--u) * 2.45), .88rem);
+    font-size: clamp(.72rem, calc(var(--u) * 2.3), .82rem);
+    line-height: 1.15;
     color: #1A1817;
     margin-bottom: 1px;
   }
   .book[data-mode="single"] .pc .blk p {
-    font-size: clamp(.68rem, calc(var(--u) * 2.15), .78rem);
-    line-height: 1.22;
+    font-size: clamp(.64rem, calc(var(--u) * 2.0), .72rem);
+    line-height: 1.2;
     color: #3b3228;
   }
   .book[data-mode="single"] .pc .blk p.opt {
-    font-size: clamp(.65rem, calc(var(--u) * 2.05), .75rem);
-    margin-top: 2px;
+    font-size: clamp(.62rem, calc(var(--u) * 1.9), .70rem);
+    margin-top: 1px;
     color: #1A1817;
   }
   .book[data-mode="single"] .pc .opt-replace {
-    font-size: clamp(.64rem, calc(var(--u) * 2.0), .74rem);
-    margin-top: calc(var(--u) * 0.6);
+    font-size: clamp(.60rem, calc(var(--u) * 1.85), .68rem);
+    margin-top: calc(var(--u) * 0.4);
     color: #6b5c47;
     font-style: italic;
+    line-height: 1.2;
   }
+
+  /* Pie de precio en Menú */
   .book[data-mode="single"] .pc .foot {
-    margin-top: calc(var(--u) * 0.8);
-    padding-bottom: calc(var(--u) * 2.8);
+    margin-top: calc(var(--u) * 0.6);
+    padding-bottom: calc(var(--u) * 1.8);
   }
   .book[data-mode="single"] .pc .foot small {
-    font-size: clamp(.66rem, calc(var(--u) * 2.1), .76rem);
+    font-size: clamp(.62rem, calc(var(--u) * 1.9), .70rem);
     color: #554430;
+    line-height: 1.1;
   }
   .book[data-mode="single"] .pc .foot strong {
-    font-size: clamp(.88rem, calc(var(--u) * 2.85), 1.05rem);
+    font-size: clamp(.84rem, calc(var(--u) * 2.7), .98rem);
     color: #1A1817;
-    line-height: 1.18;
+    line-height: 1.15;
   }
   .book[data-mode="single"] .pc .foot hr {
-    margin: calc(var(--u) * 0.4) auto;
-    width: calc(var(--u) * 6);
+    margin: calc(var(--u) * 0.35) auto;
+    width: calc(var(--u) * 5.5);
   }
+
+  /* Listado de Platos y Postres (7 ítems distribuidos prolijos) */
   .book[data-mode="single"] .pc .divsw {
-    width: calc(var(--u) * 18);
-    margin-top: calc(var(--u) * 0.6);
+    width: calc(var(--u) * 16);
+    margin-top: calc(var(--u) * 0.4);
   }
   .book[data-mode="single"] .pc .divsw.top {
     margin-top: 0;
-    margin-bottom: calc(var(--u) * 0.6);
+    margin-bottom: calc(var(--u) * 0.4);
   }
   .book[data-mode="single"] .pc .dishes {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: calc(var(--u) * 0.7);
+    gap: calc(var(--u) * 0.5);
     min-height: 0;
-    padding: calc(var(--u) * 0.4) 0;
+    padding: calc(var(--u) * 0.2) 0;
   }
   .book[data-mode="single"] .p-postres .pc .dishes {
-    padding-bottom: calc(var(--u) * 3);
+    padding-bottom: calc(var(--u) * 2.2);
   }
   .book[data-mode="single"] .pc .dish h4 {
-    font-size: clamp(.75rem, calc(var(--u) * 2.45), .88rem);
-    line-height: 1.18;
+    font-size: clamp(.72rem, calc(var(--u) * 2.3), .82rem);
+    line-height: 1.15;
     color: #1A1817;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
   }
   .book[data-mode="single"] .pc .dish p {
-    font-size: clamp(.66rem, calc(var(--u) * 2.1), .78rem);
-    line-height: 1.22;
+    font-size: clamp(.62rem, calc(var(--u) * 1.95), .70rem);
+    line-height: 1.2;
     color: #3b3228;
     margin-top: 0;
   }
+  .book[data-mode="single"] .pc .tip {
+    bottom: -1%;
+    width: calc(var(--u) * 3.8);
+  }
 
+  /* Controles y botones inferiores */
   .book-ui {
-    width: min(335px, 100% - 32px);
+    width: min(325px, 100% - 32px);
     justify-content: space-between;
     gap: 12px;
   }
